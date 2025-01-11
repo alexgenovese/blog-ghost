@@ -1,0 +1,514 @@
+ul {
+    padding: 0
+}
+
+.button {
+    border-radius: 3px;
+}
+
+.post-visibility {
+    border-radius: 2px;
+}
+
+.post-visibility .fas{
+    font-size: 10px;
+}
+
+.negative {
+    background: #15171A;
+}
+
+.negative h2, 
+.negative p {
+    color: #fff;
+}
+
+#clients ul li {
+    width: 100%;
+    max-width: 24%;
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 4%;
+}
+
+@media (min-width: 320px) and (max-width: 414px) {
+    #clients ul li {
+        max-width: 49%;
+        padding-right: 5px;
+        text-align: center;
+        margin-bottom: 20%;
+    }
+
+    #clients ul li img {
+        max-width: 65%;
+        width: 100%;
+    }
+}
+
+
+#mohd {
+    width: 120px;
+    fill: #fff
+}
+
+
+/* Dark Mode
+/* ---------------------------------------------------------- */
+@media (prefers-color-scheme: dark) {
+
+   
+
+}
+
+/**
+
+    MENU
+
+**/
+
+#secondary-menu {
+    width: 100%;
+}
+
+#secondary-menu a:first-child {
+    padding-left: 0;
+}
+
+#secondary-menu a {
+    color: #fff;
+    padding: 0 2.5%;
+    font-size: 1.4rem;
+}
+
+#news-icon-svg {
+    font-size: 12rem;
+    fill: #fff;
+    margin-bottom: 5%;
+}
+
+.site-home-header .site-description{
+    font-size: 3.8rem;
+    font-weight: 600;
+    color: #fff;
+    opacity: .8;
+}
+.responsive-header-img{
+    background-color: #000;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: auto;
+}
+.writing-on {
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 9999;
+    margin-top: 3vw;
+}
+.writing-on p {
+    font-size: 0.8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    opacity: 0.8;
+}
+.writing-on ul{
+    margin: 0;
+    list-style-type: none;
+    display: inline-flex;
+}
+.writing-on li {
+    margin-right: 5%;
+}
+.site-home-header .site-header-content{
+    padding: 15vw 3vw 6vw;
+}
+.site-description{
+    padding: 3vw 0;
+}
+
+/**
+
+    HOMEPAGE 
+
+**/
+.homepage .post-feed {
+    padding-bottom: 0;
+}
+
+/**
+
+    ARTICLES
+
+**/
+
+#pagination {
+    width: 100%;
+    padding: 2vw 0 3vw;
+    border-top: 1px solid #e0e0e0;
+    text-align: center;
+}
+
+#pagination .page-number{
+    font-size: 0.9em;
+    font-weight: 700;
+}
+
+#pagination .button.newer-posts{
+    float: left;
+}
+
+#pagination .button.older-posts{
+    float: right;
+}
+
+/**
+
+    CONTACT FORM
+
+**/
+.contact-form {
+    width: 100%;
+}
+.contact-form em{
+    font-size: 0.8em;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    border: 1px solid #cecece;
+    padding: 0.4em 0.6em 0.5em;
+    color: #111;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+    font-size: 0.95em;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 1px solid #3eb0ef;
+    outline-offset: -1px;
+}
+.contact-form label[for="full-name"],
+.contact-form label[for="email-address"] {
+    order: -1;
+}
+.contact-form input {
+    order: 0;
+    margin-bottom: 0.6em;
+}
+.contact-form label[for="message"],
+.contact-form textarea {
+    grid-column-end: span 2;
+}
+.contact-form input[type="submit"] {
+    grid-column-start: 2;
+    justify-self: end;
+    margin-top: 0.6em;
+    background: #3eb0ef;
+    color: white;
+    width: auto;
+    border: none;
+    float: right;
+    padding: 0.5em 1.3em;
+    font: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
+}
+.site-footer-nav .nav{
+    position: relative !important;
+}
+.site-footer-nav .nav li a{
+    width:100%;
+}
+
+/**
+
+    SUBSCRIBE
+
+**/
+
+.signup-form {
+    margin: 0 auto;
+}
+
+.subscribe-button:hover{
+    background-color:#fff;
+    color: #191919;
+}
+
+.subscribe-form.page{
+    padding: 1.5vw 7vw 1vw;
+}
+
+.subscribe-overlay .subscribe-email, 
+.subscribe-email,
+.subscribe-overlay button,
+.subscribe-form button{
+    border-radius: 2px;
+}
+.subscribe-form-description-small{
+    font-size: 12px !important;
+    font-style: italic;
+    padding: 10px 0;
+}
+
+.post-upgrade-cta-content .subscribe-form-description-small{
+    color: #fff;
+}
+
+.small,
+.small-white{
+    font-size: 1em !important;
+}
+
+.small-white {
+    color: #fff !important;
+}
+
+.subscribe-overlay-content .subscribe-form-title{
+    color: #ffffff;
+}
+.subscribe-form-title{
+    font-size: 3em;
+    padding: 2% 0;
+}
+
+@media (min-width: 1112px) and (max-width: 1920px){
+    .post-full-header{
+        padding: 70px 80px 50px;
+    }
+    .post-full-content{
+        padding: 0 100px 6vw;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 414px) {
+    .subscribe-overlay-content .subscribe-form-title{
+        font-size: 1.5em;
+    }
+    .subscribe-form-title{
+        font-size: 1.5em;
+    }
+    .site-footer-nav{
+        width: 100%;
+    }
+}
+
+.subscribe-form .form-group{
+    display:block;
+}
+.subscribe-form .button.primary{
+    margin: 2% 0;
+    width: 100%;
+}
+
+.star img {
+    margin: -3px 0 0;
+    width: 20px;
+    height: 20px;
+}
+
+#subscribe-footer {
+    margin: 0 auto;
+}
+
+#subscribe-footer .post-card {
+    border-bottom: none;
+}
+
+#subscribe-footer h1,
+#subscribe-footer h2,
+#subscribe-footer p{
+    text-align: center;
+}
+
+#subscribe-footer p {
+    max-width: 80%;
+    margin: 2% auto;
+}
+
+@media (max-width: 600px) {
+    #subscribe-footer p {
+        max-width: 100%;
+    }
+}
+
+#subscribe-footer a.button {
+    margin: 0 auto;
+    font-size: 1.8rem;
+}
+
+#subscribe-footer p{
+    font-size: 2rem;
+}
+
+/**
+
+    POST FEED SECTION
+
+**/
+
+.section-title {
+    margin-bottom: 0;
+    font-size: 5rem;
+}
+
+@media (max-width: 600px) {
+    .section-title {
+        font-size: 3rem;
+    }
+}
+
+
+.section-description {
+    width: 100%;
+    max-width: 80%;
+    line-height: 2.8rem;
+    margin-top: 3%;
+    font-size: 2rem;
+}
+
+@media (min-width: 320px) and (max-width: 414px) { 
+    .section-description {
+        max-width: 100%;
+        font-size: 1.8rem;
+    }
+}
+
+
+
+
+
+/**
+
+    TESTIMONIAL
+
+**/
+.card {
+    width: 100%;
+    max-width: 49%;
+    padding: 3rem;
+    background: lightblue;
+    border-radius: 3px;
+    margin: 2% 2% 0 0;
+    float: left;
+}
+.card:hover .entry-title {
+    background-position: -100% 0;
+}
+.card.last {
+    margin-right: 0;
+}
+.card.reverse {
+    background: transparent;
+}
+.entry-title {
+    font-size: 1.3rem;
+}
+.entry-title {
+    color: color(var(--darkmode) l(+20%));
+}
+.card.reverse .entry-title {
+    color: var(--lightgrey);
+}
+.entry-title p {
+    text-decoration: none;
+    font-size: 2rem;
+    color: inherit;
+    margin-bottom: 0;
+}
+small {
+    margin-top: 5px;
+    display: block;
+    color: color(var(--darkmode) l(+20%));
+    text-transform: uppercase;
+}
+small a {
+    font-weight: 700;
+    color: color(var(--darkmode) l(+20%));
+    text-decoration: none;
+}
+.card.full {
+    max-width: 100%;
+    margin: 2% 0;
+    float: none;
+    padding: 8%;
+    background: transparent;
+}
+.card.full::after {
+    content: "";
+    position: absolute;
+    background: url("../img/icon-quote-marks.svg") no-repeat top center;
+    width: 30px;
+    height: 20px;
+    top: 10%;
+    left: 49%;
+}
+.quote svg {
+    fill: midnightblue;
+    color: black;
+}
+.card.full .entry-title p {
+    font-size: 200%;
+    text-align: center;
+    font-weight: 400;
+    padding: 3% 0;
+}
+
+@media (min-width: 320px) and (max-width: 414px) {
+    .card.full::after {
+        margin: 0;
+        top: 5%;
+        left: 45%;
+    }
+
+    .card.full .entry-title p {
+        font-size: 120%;
+        line-height: 24px;
+        padding-top: 10%;
+    }
+}
+
+
+.card.full small {
+    text-align: center;
+    display: block;
+}
+.testimonial .author-avatar {
+    margin: 0 auto;
+}
+
+
+.signin-form {
+    margin: 0 auto 1vw;
+}
+
+/**
+
+    FOOTER
+
+**/
+#menu-footer-container h2, h3, h4 {
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 0;
+    margin: 0 0 1%;
+    display: block;
+    width: 100%;
+}
+
+#lang-switcher {
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+#lang-switcher .button:hover{
+    color: #fff;
+    background-color: #3eb0ef;
+}
+
+#site-description {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #676969;
+}

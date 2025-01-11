@@ -1,0 +1,50 @@
+{{!--
+This error template is used for all 404 errors, which might occur on your site.
+It's a good idea to keep this template as minimal as possible in terms of both file size and complexity.
+--}}
+
+{{!< default}}
+{{!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template --}}
+
+<header class="site-header">
+    {{> site-header}}
+</header>
+
+{{#contentFor "scripts"}}
+   
+{{/contentFor}}
+
+<main id="site-main" class="site-main outer error-content">
+    <div class="inner">
+
+        <div id="loading" class="error-message">
+            <h1 class="error-code">
+                Redirecting...
+            </h1>
+        </div>
+
+        <section id="error" class="error-message">
+            <h1 class="error-code">{{statusCode}}</h1>
+            <p class="error-description">{{message}}</p>
+            <hr>
+            <p class="error-description">Type here what you're looking for:</p>
+            
+            <!-- Start of Site Search 360 Search Box -->
+            <section id="searchbar" role="search" data-ss360="true">
+                <input type="search" id="searchBox">
+                <button id="searchButton"></button>
+            </section>
+            <!-- End of Site Search 360 Search Box -->
+            
+        </section>
+
+        {{#get "posts" limit="3" include="authors,tags"}}
+        <div class="post-feed">
+            {{#foreach posts}}
+            {{> "post-card"}}
+            {{/foreach}}
+        </div>
+        {{/get}}
+    </div>
+</main>

@@ -1,0 +1,4 @@
+User-agent: *
+Sitemap: https://alexgenovese.it/sitemap.xml
+Disallow: /ghost/
+Disallow: /p/

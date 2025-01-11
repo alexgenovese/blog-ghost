@@ -1,0 +1,48 @@
+{{^if @member}}
+<div id="subscribe-footer" class="outer">
+
+    {{#has tag="article"}}
+        <div class="inner">
+            <div class="post-card">
+                <h1>Stay up to date!</h1>
+                <h2>Get all the latest posts delivered straight to your inbox.</h2>
+                <div class="post-card-content">
+                    <p class="post-card-excerpt">The first step is to create a landing page to share your idea with your followers. Create an account on ConvertKit’s Free plan and you can have that landing page up in just minutes.</p>
+                    <a class="button primary" href="{{@site.url}}/signup/">Subscribe Now</a>
+                </div>
+            </div>
+        </div>
+    {{/has}}
+
+    {{#has tag="works"}}
+        <div class="inner">
+            <div class="post-card">
+                <h1>Do you think we’re a good match?</h1>
+                <h2>Great! I can’t wait to hear all about your business!</h2>
+                <div class="post-card-content">
+                    <p class="post-card-excerpt">
+                        Let’s have a quick intro and start improving your sales
+                    </p>
+                    <a class="button primary" href="{{@site.url}}/contact-me/">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    {{/has}}
+
+    {{#is "page"}}
+        <div class="inner">
+            <div class="post-card">
+                <h1>Do you think we’re a good match?</h1>
+                <h2>Great! I can’t wait to hear all about your business!</h2>
+                <div class="post-card-content">
+                    <p class="post-card-excerpt">
+                        Let’s have a quick intro and start improving your sales
+                    </p>
+                    <a class="button primary" href="{{@site.url}}/contact-me/">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    {{/is}}
+
+</div>
+{{/if}}

@@ -1,0 +1,121 @@
+{{!< ../default}}
+
+<header class="site-header">
+    {{> site-header}}
+</header>
+<main id="site-main" class="site-main site-signup outer">
+    <div class="inner">
+
+    {{#if @member.paid}}
+
+        {{!-- Logged in, paying member: Redirect home --}}
+        <script>window.location = '{{@site.url}}';</script>
+
+    {{else if @member}}
+
+        {{!-- Logged in, not paying: Check out --}}
+        <div class="checkout-form">
+            <h1 class="checkout-title">Choose your subscription</h1>
+            <p>Unlock full access to {{@site.title}} and see the entire library of members-only content & updates</p>
+            <div class="checkout-box">
+                <div class="checkout-plan">
+                    <header class="checkout-plan-header">
+                        <h3>Monthly</h3>
+                        <span>{{price currency=currency}}</span><strong>{{price monthly_price currency=currency}}</strong> / month
+                    </header>
+                    <div class="checkout-plan-content">
+                        <ul>
+                            <li>Full access to all private articles</li>
+                            <li>Full access to all private case studies</li>
+                            <li>Regular updates</li>
+                            <li>Proven strategies and tactics</li>
+                            <li>Download all schemas, sheets and tools</li>
+                            <li>Google Data Studio templates</li>
+                            <li>Members-only Q&A</li>
+                            <li>Simple, secure card payment</li>
+                            <li>No clickbait</li>
+                        </ul>
+                        <a class="button primary fit" href="javascript:" data-members-plan="Monthly">Choose this plan</a>
+                    </div>
+                </div>
+                <div class="checkout-plan">
+                    <header class="checkout-plan-header">
+                        <h3>Yearly</h3>
+                        <span>{{price currency=currency}}</span><strong>{{price yearly_price currency=currency}}</strong> / year
+                    </header>
+                    <div class="checkout-plan-content">
+                        <ul>
+                            <li>Full access to all private articles</li>
+                            <li>Full access to all private case studies</li>
+                            <li>Regular updates</li>
+                            <li>Proven strategies and tactics</li>
+                            <li>Download all schemas, sheets and tools</li>
+                            <li>Google Data Studio templates</li>
+                            <li>Members-only Q&A</li>
+                            <li>Simple, secure card payment</li>
+                            <li>No clickbait</li>
+                            <li>One easy payment instead of 12!</li>
+                            <li>Discounted price</li>
+                        </ul>
+                        <a class="button primary fit" href="javascript:" data-members-plan="Yearly">Choose this plan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    {{else}}
+    {{!-- Not logged in: Sign up --}}
+
+        <article class="post-full">
+            <header class="post-full-header">
+                <h1 class="post-full-title">
+                    {{t "Get relevant articles and actionable tips to increase your sales!"}}
+                </h1>
+                
+                <p class="post-full-custom-excerpt">
+                    1,864 subscribers are boosting their business reading tips and strategies from my articles.
+                </p>
+                <br><br>
+                <div class="checkout-plan-content">
+                    <ul>
+                        <li>
+                            Access to Proven Tactics and Strategies explained in detailed with Schemas and References
+                        </li>
+                        <li>
+                            Access to Schemes and Google Docs and Sheets to super fasting your workday routine
+                        </li>
+                        <li>
+                            Access to Advanced Growth Hacking Experiments – Simplify your Experiments 
+                        </li>
+                    </ul>
+                </div>
+
+            </header>
+
+            {{!-- Not logged in: Sign up --}}
+            <form class="signup-form" data-members-form="signup">
+                <h1 class="signup-title"></h1>
+                <p class="subscribe-form-description"></p>
+                <div class="signup-box">
+                    <input data-members-email type="email" placeholder="Type your email..." required="true" autocomplete="false" />
+                    <button class="button primary" type="submit">
+                        <span class="button-content">Continue</span>
+                        <span class="button-loader">{{> "icons/loader"}}</span>
+                    </button>
+                </div>
+                <p class="subscribe-form-description-small"> <i class="fa fa-info-circle"></i> Subscribing to newsletter you agree the privacy policy and accept to receive mail from my blog.</p>
+                <hr>
+                <p class="small">Already have an account? <a href="{{@site.url}}/signin/">Sign In</a></p>
+
+                <div class="message-success"><strong>Great!</strong> Check your inbox and click the link to confirm your subscription</div>
+                <div class="message-error">Please enter a valid email address!</div>
+            </form>
+
+            {{!-- Testimonial --}}
+            {{> "testimonial-signup"}}
+        </article>
+
+    {{/if}}
+
+    </div>
+</main>

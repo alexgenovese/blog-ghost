@@ -1,0 +1,20 @@
+routes:
+  /signup/: members/signup
+  /signin/: members/signin
+  /account/: members/account
+  /work/: index-work
+  /blog/:
+    permalink: /{slug}/
+    template: index-blog
+
+collections:
+  /:
+    template: index
+    filter: tag:-hash-work
+  /work/:
+    permalink: /work/{slug}/
+    template: index-work
+
+taxonomies:
+  tag: /tag/{slug}/
+  author: /author/{slug}/
